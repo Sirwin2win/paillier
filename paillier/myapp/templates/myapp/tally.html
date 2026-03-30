@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+   <body class="container mt-5">
+
+  <h3>Encrypted Total</h3>
+
+  <div class="alert alert-info">
+    {{ encrypted_total }}
+  </div>
+
+  <form method="POST" action="{% url 'decrypt' %}">
+    {% csrf_token %}
+    <button class="btn btn-danger">Decrypt Total</button>
+  </form>
+
+  {% if decrypted_total %}
+  <div class="alert alert-success mt-3">
+    Decrypted Total: {{ decrypted_total }}
+  </div>
+  {% endif %}
+
+</body>
+{% endblock %}
