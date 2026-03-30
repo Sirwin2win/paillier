@@ -27,7 +27,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['https://paillier.onrender.com']
 ALLOWED_HOSTS = [
-    'paillier.onrender.com',
+   'https://paillier.onrender.com',
     'localhost',
     '127.0.0.1'
 ]
