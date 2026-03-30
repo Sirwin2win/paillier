@@ -25,13 +25,10 @@ SECRET_KEY = 'django-insecure-*5phe+3r)-6cmc7@ov1kzv_8gn325s*-=rl2%+o8%t+&7bl_lg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['https://paillier.onrender.com']
-# ALLOWED_HOSTS = [
-#    'https://paillier.onrender.com',
-#     'localhost',
-#     '127.0.0.1'
-# ]
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'paillier.onrender.com',
+    '.onrender.com',
+]
 
 
 # Application definition
